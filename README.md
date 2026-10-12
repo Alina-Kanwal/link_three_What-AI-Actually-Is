@@ -42,6 +42,14 @@ Yeh sawal mere khud ke andaze par hain, official exam ke nahi.
 "Aage" likhein to Part 2 (tokens) shuru karta hoon, ya "quiz" likhein to Part 1 par English mein sawal.
 Encyclopedia ek bari kitab (ya kitabon ka set) hai jis mein duniya ke hazaron topics par mukhtasar maloomat likhi hoti hai, jaise ek hi jagah par tareekh, science, shehron aur mashhoor logon ke baare mein.
 Misal: Wikipedia ek online encyclopedia hai. Urdu mein ise “daira-tul-ma’arif” bhi kehte hain.
+**Frozen model: poori baat points mein**
+- Training khatam hote hi model ke **weights freeze** ho jate hain, aur seekhne ka marhala wahin khatam.
+- ChatGPT aur Claude jo aap istemal karti hain, **dono frozen hain**.
+- Aap ne chat mein model ko correct kiya, to correction **is chat ke text** mein aa jati hai.
+- Model agla jawab usi text ko dekh kar likhta hai, isliye **is chat mein** jawab theek hone lagta hai.
+- **Naya chat** kholein to correction wahan nahi hoti, kyunke model ke andar kuch badla hi nahi tha.
+- Model tab badalta hai jab **company khud nayi training** karke naya version (nayi weights) release karti hai.
+- Is naye version mein **aap ki chat ka koi hissa nahi** hota
 
 
 
