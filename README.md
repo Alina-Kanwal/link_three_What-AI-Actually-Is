@@ -19,3 +19,45 @@ Aakhri ek line: AI ek writer hai jo sab se mumkin text likhti hai, librarian nah
 6. **AI kam "mujhe nahi pata" kehti hai:** kyunke prediction ka kaam hamesha koi agla token dena hota hai. Jab tak usay "nahi pata" kehna trained na kiya gaya ho, woh bol deti hai.
 **Exam ke liye sab se zaroori:** AI predict karti hai look up nahi (Idea 1), isliye rare topic par confident jawab aaye to source se verify karo.
 Ab "aage" likhein to Idea 2 shuru karta hoon.
+///////////////////////////////////////////////////////////////////////////AI ne ek baar parha, phir seekhna band ho gaya
+Aap ki baat sahi pakri hai, yeh bohat ahem hai. Isay ek student ki misal se samjhata hoon.
+**Ek student ki misal**
+**Marhala 1: Pretraining (bohat saari kitabein parhna)**
+Student ne hazaron kitabein, akhbar aur websites parhi hain. Usay yeh aata hai ke **text ke baad agla text kya aata hai.** Usay yeh nahi sikhaya gaya ke koi sawal pooche to jawab dena hai.
+Is liye agar aap likhein "Pakistan ka capital kya hai?", to woh isay **agli line ki tarah** continue karta hai, yani "Pakistan ka sab se bara shehar kaunsa hai?" Woh jawab nahi dhoondta, woh text ka agla hissa likhta hai, kyunke exam papers mein sawal ke baad aksar doosra sawal hota hai.
+**Marhala 2: Instruction tuning (jawab dena sikhana)**
+Ab ek ustad usay **chhoti list** dikhata hai: sawal aur uska theek jawab. Student seekhta hai: *"Jab koi sawal puche to jawab do. Jab koi kaam de to wo kaam poora karo."* Ab model assistant ki tarah jawab dene lagta hai.
+**Marhala 3: Style tuning (RLHF, andaaz sudharna)**
+Ab kai log student ke alag alag jawab parhkar number dete hain. Jo jawab saaf, madadgaar, aur confident hote hain unhein zyada number milte hain. Student us andaaz ko pasand karna seekh jata hai. **Is ka ek nuksan hai:** yeh confident aur agreeable andaaz sach hone ki guarantee nahi (Idea 6).
+**Yaad rakhne ka tareeqa:** *Parho → Jawab dena seekho → Andaaz sudharo.*
+**Teeno marhale freeze se pehle hote hain.** Training khatam hote hi weights freeze ho jate hain, aur aap jab model istemal karti hain (**inference**) to un mein kuch nahi badalta.
+**Exam mein is par kaun se sawal aa sakte hain (mere andaze se):**
+1. **Marhale ka naam:** "Kaun sa marhala model ko sikhata hai ke sawal ka jawab dena hai?" → **Instruction tuning.**
+2. **Kya kisi marhale mein seekhna ab bhi chalta hai?** "Aap ne AI ko correction di, kya woh seekh gayi?" → **Nahi.** Model frozen hai, sirf is chat mein madad karti hai.
+3. **Confidence ki wajah:** "AI itni confident kyun lagti hai?" → **Marhala 3** (insani ratings confident andaaz ko behtar maante hain), aur sach ki guarantee nahi.
+4. **Cutoff:** "AI ko aaj ki khabar kyun nahi pata?" → **Knowledge cutoff**, training ki text ek tay tareekh par ruk gayi.
+5. **Memory ka sawal:** "AI agle chat mein purani baat kaise yaad rakhti hai?" → **Model nahi, product ek note save karke har chat ke shuru mein dikhata hai.**
+Yeh sawal mere khud ke andaze par hain, official exam ke nahi.
+**Ek aakhri line:** pehle marhale mein AI likhna seekhti hai, doosre mein jawab dena, teesre mein andaaz.
+"Aage" likhein to Part 2 (tokens) shuru karta hoon, ya "quiz" likhein to Part 1 par English mein sawal.
+Encyclopedia ek bari kitab (ya kitabon ka set) hai jis mein duniya ke hazaron topics par mukhtasar maloomat likhi hoti hai, jaise ek hi jagah par tareekh, science, shehron aur mashhoor logon ke baare mein.
+Misal: Wikipedia ek online encyclopedia hai. Urdu mein ise “daira-tul-ma’arif” bhi kehte hain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
