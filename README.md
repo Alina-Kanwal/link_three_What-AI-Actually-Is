@@ -117,14 +117,7 @@ Aap ki Project ya account ki instructions aur file
 Is chat ki baat-cheet
 Aap ka naya prompt aur attach ki hui files.
 * Is se 3 rawaiye: is chat ki baat yaad, pichli chat ki nahi; lambi chat slow aur API par mehngi (har baar poora history dobara process aur paise); bohat lambi chat mein shuru ki baat bhool jana (transcript window se bara ho gaya, purane messages kate ya summary huye).
-
-
-
-
-
-
-
-
+Aadat: naye kaam ke liye naya chat, aur lambi chat ki summary bana kar naye chat mein shuru karna.
 
 
 
