@@ -66,6 +66,39 @@ Misal: Wikipedia ek online encyclopedia hai. Urdu mein ise “daira-tul-ma’ari
 - Uske paas koi doosri salahiyat nahi thi jo kehti "tum andaza laga rahi ho." **Woh awaaz aap se aani hai.**
 **Yaad rakhne ki ek line:** AI ke andar ek hi salahiyat hai (jawab banana), check karne wali doosri salahiyat **aap** hain.
 **Exam tip:** rare ya chhoti cheez par AI ne mufassal confident jawab diya aur source nahi diya, to source kholo aur verify karo.
+///////////////////////////////////////////////////////////////////////////**Idea 4: Tokens (sirf nayi baatein)**
+**Pehle parh chuke hain** (yahan dobara nahi likh raha): token ka matlab, aur yeh ke "the" ek token aur "strawberry" kai tukron mein katta hai.
+**Nayi baatein:**
+- Text ko tukron mein kaatne wale hisse ka naam **tokenizer** hai. Model tak aap ka text pahunchne se pehle yeh kaam ho chuka hota hai.
+- Model ko letters ki saaf qatar **kabhi nahi milti**, sirf tukre. Kuch spelling wo token patterns se andaza laga leta hai, magar letter-level exact kaam (jaise ginna) uske liye unnatural hai.
+- Is liye **strawberry mein 'r' ginne** mein ghalti hoti hai. Misal: tukre ke andar letters ginna aisa hai jaise sirf street address de kar poochna ke imarat mein kitne kamre hain.
+- Jab aap model ko lafz **ek ek piece mein spell** karne par majboor karte hain, to jawab theek aa jata hai.
+- **Mashhoor sawal yaad ho sakta hai:** strawberry test mashhoor hai, isliye model usay yaad rakh sakta hai. Asli test ke liye apna random string banayein.
+**Is se aur ajeeb rawaiye samajh aate hain:**
+- **Rhyme, anagram aur wordplay mein kamzori:** yeh kaam letters aur awaz par hain, model tukron par kaam karta hai.
+- **Typos aksar farq nahi dalte:** ghalat spelling wala lafz bhi un tukron ke qareeb jata hai jo asli matlab ke hain.
+**Token teen cheezon ki ikai hai:**
+- **Matlab ki ikai:** model yahi parhta aur likhta hai.
+- **Yaadasht ki ikai:** "200,000-token context window" ka matlab hai ke ek waqt mein itne tukre saamne rakh sakta hai.
+- **Paise ki ikai:** **API** (jis se koi program seedha model ko call karta hai, chat window ke bagair) ki qeemat "per token" hoti hai: jitne tukre andar, jitne bahar.
+- Angrezi mein andaza: **4 tokens ≈ 3 lafz.**
+**Doosri zubanon (Urdu, Arabic, Hindi, Chinese):**
+- In mein har lafz aksar **zyada tokens** mein katta hai, kyunke tokenizer ne Angrezi tukre sab se achhe seekhe (training text Angrezi-heavy thi).
+- Nateeja: wohi message **mehnga** padta hai, aur context window jaldi bharti hai.
+- Lamba document ahem ho to kabhi model se Angrezi mein kaam karwa kar aakhir mein translate karwana behtar hota hai.
+**Images aur audio:**
+- Image chhote **patches** mein kat'ti hai (har patch ek token), aur awaz chhote **segments** mein (har segment ek token).
+- Model ek hi stream par predict karta hai jis mein lafz ke tukre, patches aur segments mile hote hain.
+- Isliye image ke andar **chhota print** parhna mushkil hai: patch bhi ek tukra hai, aur uske andar ke letters parhna wohi strawberry masla hai.
+**Exam tip:** letters ginne ya spelling mein ghalti ki wajah **tokenization** hai. Cost, limit aur yaadasht, teeno tokens mein napi jati hain. Non-English text mein zyada tokens lagte hain, isliye cost aur window dono par asar padta hai.
+"Aage" likhein to Idea 5 (context window) shuru karta hoon.
+Matlab: model text ko tukron mein parhta aur likhta hai.
+Yaadasht: “200,000-token context window” ka matlab hai ke model ek waqt mein itne tukre saamne rakh sakta hai.
+Paise: AI ki qeemat “per token” lagti hai, yani jitne tukre andar aur bahar gaye utne paise.
+1. Text ko tukron mein kyun diya jata hai?
+Course is ki wajah tafseel se nahi batata, magar aam samajh yeh hai: model sirf numbers par kaam karta hai, isliye text ko ek tay tukron ki list mein kaata jata hai aur har tukre ka ek number hota hai. Poore lafz ka bohat bara zakheera banana mushkil hai, aur har harf alag alag rakhne se text bohat lamba ho jata hai. Tukre dono ke beech ka raasta hain.
+2. Ginna kyun nahi aata?
+Model ko “strawberry” ki harf-ba-harf qatar milti hi nahi, sirf tukre jaise “straw” aur “berry”. Tukre ke andar ke harf us ke liye alag alag nazar nahi aate, isliye exact ginna uske liye mushkil hai.
 
 
 
