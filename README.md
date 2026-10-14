@@ -185,10 +185,40 @@ Ek line mein: Skills = folder, progressive disclosure = us folder ko thora thora
 - **Context window aur chat history:** window woh jagah hai, chat history us mein bheja jane wala ek hissa.
 - **Hallucination aur sycophancy:** hallucination jhoota jawab hai, sycophancy woh jawab hai jo aap ke ishare ke mutabiq ho.
 
-Ek ehtiyat: Idea 7 se 9 ke words (jagged, tools ki tafseel, agent, connector, MCP, reasoning) abhi baqi hain, woh un ideas ke saath aayenge.
+////////////////////////////Ek ehtiyat: Idea 7 se 9 ke words (jagged, tools ki tafseel, agent, connector, MCP, reasoning) abhi baqi hain, woh un ideas ke saath aayenge.
 
 "Vocab quiz" likhein to in words par English mein 8-10 sawal bana deta hoon, ya "aage" likhein to Idea 7 shuru karta hoon.
-////////////////////////////////////////////////////////////
+Tumhara jawab sahi hai: bhejne se pehle check karna. Wajah yeh hai ke summary jaisa aasaan dikhne wala kaam bhi bina warning ghalat ho sakta hai.
+
+**Idea 7 ek hi baar mein, point-wise**
+
+**Asal baat**
+- AI ki salahiyat hamwar nahi, **jagged** hai: ek kaam par insaan se aage, bilkul saath wale aasaan kaam par kamzor.
+- Misal: legal-jaisi clause achhi likh deti hai, par "strawberry" mein letters ginte waqt ghalti kar deti hai.
+
+**Kyun hota hai**
+- Jis kaam ka text mein bohat aur saaf namoona tha (aam concepts, aam style, aam code), wahan mazboot hai.
+- Jo cheezein woh theek se dekh nahi sakti, wahan kamzor hai: alag letters (kyunki woh tokens, yaani chunks, parhti hai), taaza waqiyaat, tumhara private data, rare topics.
+- Isliye "mushkil/aasaan" ka insani andaza kaam nahi karta.
+
+**Ghalat tasveer**
+- "Mushkil kaam kiya, to aasaan bhi kar legi" ghalat hai. Khatarnak ghalti aasaan dikhne wale kaam mein hoti hai, jise hum check hi nahi karte.
+
+**Teen aadatein**
+1. Mushkil kaam ki jeet ko aasaan kaam ki jeet na samjho.
+2. Check wahan karo jahan strong aur weak zone milte hain, yaani aasaan dikhne wale kaam par bhi.
+3. Wohi kaam do-teen alag models se karwao, kyunki har ek ka zigzag alag hai.
+
+**Ek aur baat**
+- Yeh zigzag badalta rehta hai, isliye time time par dobara test karo.
+
+**Document ke words**
+- **Jagged**: salahiyat dandanedar, hamwar nahi.
+- **Frontier**: woh hadd jahan tak AI kaam kar sakta hai; yahi hadd upar-neeche hoti hai aur aage badalti bhi hai.
+- **Superhuman**: insaan se bhi behtar.
+- **Tokens** (Idea 4 se): text ke chhote chunks.
+
+Ab ek line mein apne alfaaz mein batao: jagged ka matlab kya hai, aur tum AI ke kaam ko check karne ka faisla kaise karogi?
 
 
 
