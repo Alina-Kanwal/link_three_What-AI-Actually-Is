@@ -239,6 +239,17 @@ Code execution: Model program predict karta hai, tool use chalata hai, real resu
 Connector:Tumhari real app (Drive, Gmail, Slack, tracker, database) se juda tool. Agent sirf wohi permissions use karta hai jo tum do
 Web search:	Purane (stale) model ko current info deta hai
 MCP (Model Context Protocol) ek shared open standard hai, yaani agent aur kisi bhi service ke beech baat karne ki ek jaisi “plug ki shakal”. Connector us plug mein lagne wala ek appliance hai, isliye ek agent custom wiring ke baghair hazaron services tak pahunch jata hai. Connector jo kuch laata hai woh text ban kar context window mein aata hai, aur model wahi next-token predictor rehta hai: new plug, same machine.
+Lookup ka matlab hai kisi jagah se maloomat dhoondhna, jaise database, website ya file mein dekhna.
+FOR EXAM:
+Tool ka result context window mein jata hai, weights mein nahi.
+Agent koi naya dimaagh nahi, wahi predictor hai.
+Machine kabhi next-token predictor banna nahi chhodti, bas tools aur lambe loops milte hain.
+Research: paid feature jo bohat searches chala kar cited report deta hai
+Code execution: model ka likha program chalane wala tool
+Connector: tumhari ek real app se juda ek tool, tumhari di hui permissions ke saath
+MCP (Model Context Protocol): standard jo kisi bhi connector ko kisi bhi agent ke saath chalne deta hai
+Agent: tools ke saath predictor, jo predict, act, observe loop goal tak chalata hai
+
 
 
 
