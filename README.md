@@ -226,7 +226,13 @@ Matlab: tool sirf **facts laata hai**, jawab **model likhta hai**.
 - Phir model un facts ko dekh kar jawab **predict** karta hai, yaani agla piece of text predict karte karte jawab likhta hai. Document ke mutabiq woh jawab banane ka sirf yehi tareeqa jaanta hai.
 Isi liye model khud database mein lookup nahi karta. Lookup product ka tool karta hai, aur model us result ko jawab mein badalta hai.
 **Exam line:** tool fetches, model predicts.
-/////////////////////////////////////////////////
+///////////////////////////////////////////////////Tools let it act, not just describe
+Tools se pehle AI sirf apni **yaad ka text** bata sakta tha. Woh aaj ka mausam check, calculation, file parhna ya email bhejna nahi kar sakta tha, aur yeh kai saal tak uski hadd (ceiling) rahi.
+Tool = ek defined action jo model call kar sakta hai: web search, code run, file read, email draft.
+Har tool ki description model ko context window ke andar di jati hai.
+Model pehle predict karta hai ke "search tool chalao", product woh action asal mein chalata hai, result context window mein wapas aata hai, aur model wahin se aage jawab predict karta hai.
+Isi loop ki wajah se chatbot (jo duniya ko describe karta hai) assistant ban jata hai (jo duniya par act karta hai). Tasveer tools-loop yehi dikhati hai.
+
 
 
 
