@@ -118,6 +118,25 @@ Is chat ki baat-cheet
 Aap ka naya prompt aur attach ki hui files.
 * Is se 3 rawaiye: is chat ki baat yaad, pichli chat ki nahi; lambi chat slow aur API par mehngi (har baar poora history dobara process aur paise); bohat lambi chat mein shuru ki baat bhool jana (transcript window se bara ho gaya, purane messages kate ya summary huye).
 Aadat: naye kaam ke liye naya chat, aur lambi chat ki summary bana kar naye chat mein shuru karna.
+* context window par jo text rakha jata hai wohi model parh sakta hai. Jo mez par nahi, woh model ko nazar nahi aata.
+Exam tip: model ne aap ki private ya pichle chat ki baat nahi jaani = woh window mein thi hi nahi. Lambi chat mein shuru ki baat bhool gaya = window trim hui. Jawab bar bar kharab aur chat bohat lambi = naya chat, summary ke saath.
+////////////////////////////////////////////////////////////////Confidence ek seekha hua andaaz hai, sach ka ishara nahi
+What we read befoe
+""""Pretraining: model bohat saari insani text parhta hai aur agla tukra predict karna seekhta hai.
+Instruction tuning: chhote examples (sawal aur achha jawab) se model seekhta hai ke sawal ka jawab dena hai, usay continue nahi karna.
+RLHF: (reinforcement learning from human feedback) training ka teesra marhala hai, insan model ke jawabon ko rate karte hain, aur model un jawabon ki taraf jhukta hai jin ko zyada rating mili (confident, madadgaar, agreeable)""""""
+* Lakhon ratings mein log confident, madadgaar, fluent aur agreeable jawab ko zyada pasand karte hain, aur jhijakte ya challenge karte jawab ko kam.
+Isliye model ka jhukao confident aur agreeable text ki taraf ho jata hai, chahe content sahi ho ya na ho.
+* Confidence ka ek aur zariya bhi hai: training ki text mein bhi bohat confident insani likhai hai, aur model yeh bhi bhaanp leta hai ke aap kaunsa jawab chahte hain.
+Tuning (RLHF wala marhala) model ko confident andaaz ki taraf bohat zor se dhakelta hai.
+* AI rarely “mujhe nahi pata” kehti hai unless trained to say it. Yani model ko “nahi pata” kehna sikhaya ja sakta hai, aur isse hallucination kam hoti hai, magar ghatam nahi hoti.
+Is se do rawaiye:
+Ghalat hone par bhi yaqeen se bolna. Yaqeen ek seekha hua default hai, aur sach se alag cheez.
+Aap se ittefaq karna. Ise sycophancy kehte hain: woh bol dena jo aap sunna chahti hain. Ittefaq ko ziyada rating mili, ikhtilaf ko kam.
+* Paimane ke saath: aap likhti hain “in teen cheezon par parkho: (1) har dawa ka saboot hai ya nahi, (2) structure saaf hai ya nahi, (3) zabaan ghalti-mukt hai ya nahi, aur har ek par alag number do, wajah ke saath.” Ab AI ko har paimane par ek khaas jawab dena parta hai, isliye sirf “achha hai” kehne ka mauqa kam bachta hai.
+* Aap mashine ko hara nahi rahi, aap bas wo ishare hata rahi hain jo uska jhukao chalate hain.
+Yaad rakhne ki ek line: AI ka yaqeen aur ittefaq, dono seekhe hue andaaz hain, sach ka saboot nahi.
+Exam tip: AI ne ghalat baat bhi pur-yaqeen lehje mein kahi = andaaz seekha hua hai, sach ka ishara nahi. AI ne aap ke sawal ke ishare ki taraf jawab diya = sycophancy, aur hal neutral framing ya explicit criteria hai.
 
 
 
