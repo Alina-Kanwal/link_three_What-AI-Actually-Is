@@ -220,6 +220,14 @@ Tumhara jawab sahi hai: bhejne se pehle check karna. Wajah yeh hai ke summary ja
 
 Ab ek line mein apne alfaaz mein batao: jagged ka matlab kya hai, aur tum AI ke kaam ko check karne ka faisla kaise karogi?
 
+Matlab: tool sirf **facts laata hai**, jawab **model likhta hai**.
+- Tool (jaise web search) aaj ka mausam dhoondh kar laata hai.
+- Woh facts text ban kar **context window** mein aa jate hain.
+- Phir model un facts ko dekh kar jawab **predict** karta hai, yaani agla piece of text predict karte karte jawab likhta hai. Document ke mutabiq woh jawab banane ka sirf yehi tareeqa jaanta hai.
+Isi liye model khud database mein lookup nahi karta. Lookup product ka tool karta hai, aur model us result ko jawab mein badalta hai.
+**Exam line:** tool fetches, model predicts.
+/////////////////////////////////////////////////
+
 
 
 
