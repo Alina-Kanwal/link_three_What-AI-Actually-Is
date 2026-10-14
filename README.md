@@ -232,6 +232,14 @@ Tool = ek defined action jo model call kar sakta hai: web search, code run, file
 Har tool ki description model ko context window ke andar di jati hai.
 Model pehle predict karta hai ke "search tool chalao", product woh action asal mein chalata hai, result context window mein wapas aata hai, aur model wahin se aage jawab predict karta hai.
 Isi loop ki wajah se chatbot (jo duniya ko describe karta hai) assistant ban jata hai (jo duniya par act karta hai). Tasveer tools-loop yehi dikhati hai.
+Agent = wahi next-token predictor + tools + predict, act, observe loop, baar baar, ek goal ki taraf.
+Koi naya qism ka dimaagh nahi. Sirf predictor, tools ka set, aur loop.
+Wahi machine ek din chat window hai, aur tools lagne par agent jo tumhara folder reorganize kar de.
+Code execution: Model program predict karta hai, tool use chalata hai, real result wapas aata hai. Yeh Code You Never Write course ki bunyaad hai
+Connector:Tumhari real app (Drive, Gmail, Slack, tracker, database) se juda tool. Agent sirf wohi permissions use karta hai jo tum do
+Web search:	Purane (stale) model ko current info deta hai
+MCP (Model Context Protocol) ek shared open standard hai, yaani agent aur kisi bhi service ke beech baat karne ki ek jaisi “plug ki shakal”. Connector us plug mein lagne wala ek appliance hai, isliye ek agent custom wiring ke baghair hazaron services tak pahunch jata hai. Connector jo kuch laata hai woh text ban kar context window mein aata hai, aur model wahi next-token predictor rehta hai: new plug, same machine.
+
 
 
 
