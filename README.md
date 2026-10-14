@@ -249,6 +249,30 @@ Code execution: model ka likha program chalane wala tool
 Connector: tumhari ek real app se juda ek tool, tumhari di hui permissions ke saath
 MCP (Model Context Protocol): standard jo kisi bhi connector ko kisi bhi agent ke saath chalne deta hai
 Agent: tools ke saath predictor, jo predict, act, observe loop goal tak chalata hai
+/////////////////////////////////////////////////////“Thinking” is just more prediction before the answer
+Next-token prediction ka matlab hai: model text ka agla chhota hissa (token) predict karta hai, phir usay wapas andar daal kar uske baad wala hissa predict karta hai, aur yeh baar baar karta hai.
+Naye models answer dene se pehle “think” kar sakte hain.
+Document ke mutabiq yeh thinking bhi sirf next-token prediction hai.
+Reasoning model woh model hai jo pehle intermediate working ka lamba hissa predict karta hai, aur uske baad final answer predict karta hai.
+Working mein woh steps likhta hai, alag approaches try karta hai, aur khud ko check karta hai.
+Jab answer predict hota hai, tab yeh working model ke apne context window mein maujood hoti hai, aur woh us par build karta hai
+Isse answer behtar kyun hota hai
+Answer predict karna aasaan aur zyada accurate ho jata hai jab pehle se achhi chain of working saamne ho.
+Wajah wahi hai jo insaan ke liye hai: kaagaz par soch kar likhna.
+Reasoning model bhi aisa hi karta hai:
+Pehle working predict karke likhta hai (steps, alag approaches, khud ko check).
+Woh working uske context window mein aa jati hai, jaise kaagaz saamne rakha ho.
+Phir final answer usi working ko dekh kar predict hota hai.
+(Is thn kny say ans asan hojata hy )
+“Thinking” jo chat mein dikhta hai
+Yeh woh chhota **collapsible section** hai jo kuch chat apps mein answer ke upar aata hai, aur jis par click karke tum usay khol (expand) sakti ho. Aksar uska naam "Thinking" ya "Thought for ..." jaisa hota hai.
+Yeh sirf tab dikhta hai jab model **thinking mode** mein chal raha ho, aur har product mein nahi dikhta. Document ke mutabiq kuch products kuch bhi nahi dikhate.
+Agar tumhari app mein yeh dabba nahi hai, to iska matlab yeh nahi ke model ne working nahi ki. Sirf **visibility** alag hai.
+
+
+
+
+
 
 
 
