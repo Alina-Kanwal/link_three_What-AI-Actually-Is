@@ -268,6 +268,29 @@ Phir final answer usi working ko dekh kar predict hota hai.
 Yeh woh chhota **collapsible section** hai jo kuch chat apps mein answer ke upar aata hai, aur jis par click karke tum usay khol (expand) sakti ho. Aksar uska naam "Thinking" ya "Thought for ..." jaisa hota hai.
 Yeh sirf tab dikhta hai jab model **thinking mode** mein chal raha ho, aur har product mein nahi dikhta. Document ke mutabiq kuch products kuch bhi nahi dikhate.
 Agar tumhari app mein yeh dabba nahi hai, to iska matlab yeh nahi ke model ne working nahi ki. Sirf **visibility** alag hai.
+Reasoning bohat se extra tokens banati hai jo tumhe nahi dikhte, aur un mein time aur paisa lagta hai.
+Isliye prompting course kehta hai: thinking mode mushkil sawalon ke liye rakho, aur quick lookups ke liye na use karo.
+“Think step by step” ka maamla
+Pehle yeh phrase useful tha, kyunke tum hath se model se kehti thi ke working pehle window mein daale.
+Ab yeh aksar built in hai: model mushkil problems par khud yehi karta hai.
+Cost
+Reasoning bohat se extra tokens banati hai jo tumhe nahi dikhte, aur un mein time aur paisa lagta hai.
+Isliye prompting course kehta hai: thinking mode mushkil sawalon ke liye rakho, aur quick lookups ke liye na use karo.
+Sab se zaroori limit (exam ke liye)
+Thinking se model ko Idea 3 wali doosri ability (truth-checker) nahi milti.
+Reasoning model apna kaam usi prediction process se check karta hai jo ghalat bhi ho sakta hai.
+Yaani: woh apni bohat si ghaltiyan pakad leta hai, kuch miss karta hai, aur rigorous dikhne wali working ke andar bhi full confidence ke saath cheezein invent kar sakta hai.
+More thinking narrows the gap. It does not close it. Aakhri check tum ho.
+Is idea se jude English words
+Reasoning: working jo model answer se pehle khud ke liye likhta hai
+Chain of working: woh intermediate steps jo context window mein jama hote hain
+Thinking mode: reasoning on karne ka option, mushkil kaam ke liye
+Tumhare scenario-based exam ke liye iska seedha matlab yeh hai: agar scenario mein kaha jaye “model ne bohat soch kar answer diya, to ab verify ki zaroorat nahi”, to yeh ghalat hai.
+Exam line: thinking is more prediction written before the answer; it helps a lot, but it does not give the machine a truth-checker.
+
+Ab course ke 9 ideas poore ho gaye. Document ka aakhri ek jumla jo exam ke liye yaad rakhna:
+
+It is a prediction machine that learned by reading and has no part that checks the truth. So it is fluent everywhere, reliable only where it read a lot, and you are the part that checks.
 
 
 
