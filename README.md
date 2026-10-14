@@ -137,6 +137,58 @@ Aap se ittefaq karna. Ise sycophancy kehte hain: woh bol dena jo aap sunna chaht
 * Aap mashine ko hara nahi rahi, aap bas wo ishare hata rahi hain jo uska jhukao chalate hain.
 Yaad rakhne ki ek line: AI ka yaqeen aur ittefaq, dono seekhe hue andaaz hain, sach ka saboot nahi.
 Exam tip: AI ne ghalat baat bhi pur-yaqeen lehje mein kahi = andaaz seekha hua hai, sach ka ishara nahi. AI ne aap ke sawal ke ishare ki taraf jawab diya = sycophancy, aur hal neutral framing ya explicit criteria hai.
+////////////////////////////////////////////////////////////////////VOCABLARIES
+Yeh Idea 1-6 ke woh mushkil words hain jo course ke apne glossary aur text se liye gaye hain.
+
+**Idea 1: Prediction**
+- **Token:** text ka chhota tukra, aksar ek lafz ya lafz ka hissa. Model isi ko parhta aur likhta hai.
+- **Weights (parameters):** model ke andar ke frozen numbers jin mein sab seekha hua ilm hota hai. "Parameters" inhi ka doosra naam hai.
+- **Stochastic:** agla tukra mumkin options ki ek list mein se chuna jata hai, isliye jawab har baar thora alag ho sakta hai.
+- **Temperature:** woh dial jo tay karta hai ke model kitni himmat se kam mumkin tukre chune. Kam temperature steady aur dohrata hua, zyada alag-alag magar kabhi ghalat.
+- **Tools:** model ko di gayi actions jaise web search, file parhna, code chalana. Yeh product lagata hai, model khud nahi.
+
+**Idea 2: Training aur freeze**
+- **Training:** woh ek baar ki tayyari jis mein model ne bohat text parh kar weights set kiye.
+- **Pretraining:** training ka pehla marhala, jis mein model bohat bara text ka zakheera parhta hai.
+- **Frontier model:** aaj ke sab se bade aur sab se qabil models mein se ek.
+- **Instruction tuning:** training ka woh marhala jis ne model ko sikhaya ke sawal ka jawab dena hai, usay continue nahi karna.
+- **Inference:** jab aap model istemal karti hain. Frozen weights aap ke text par chalte hain, aur andar kuch nahi badalta.
+- **Knowledge cutoff:** woh tareekh jahan training text ruk gayi. Uske baad ki koi cheez weights mein nahi.
+- **Stateless:** model ke andar apni koi yaadasht nahi. Har jawab frozen weights aur us waqt saamne ke text se naye sire se banta hai.
+- **Mixture of experts:** weights ko is tarah sajana ke har tukre ke liye sirf kuch hissa chalta hai. Model tez aur sasta chalta hai.
+- **Quantization:** numbers ko kam precision par rakhna taake model chhote, sasta hardware par chal sake.
+
+**Idea 3: Sach**
+- **Hallucination:** ek fluent, confident, magar jhoota jumla. Yeh machine ka kharab hona nahi, uski bunyadi bunawat ka nateeja hai.
+
+**Idea 4: Tokens ki tafseel**
+- **Tokenizer:** woh hissa jo aap ke text ko tokens mein kaat'ta hai.
+- **API:** woh seedha raasta jis se koi program model ko call karta hai, chat window ke bagair.
+- **Patches:** image ke chhote tukre. Har patch ek token banta hai.
+- **Segments:** awaz ke chhote tukre. Har segment ek token banta hai.
+
+**Idea 5: Context window**
+- **Context window:** woh poora text jo model ek jawab likhte waqt dekh sakta hai.
+- **System prompt:** product ki taraf se window ke sab se oopar rakhi hui hidayat.
+- **Chat history:** poora transcript jo har baar dobara window mein bheja jata hai. Yeh model ke andar store nahi hota.
+- **Skills:** hidayat aur files ka folder jo window ke bahar rehta hai aur jab request match kare tab load hota hai.
+- **Progressive disclosure:** ilm files mein rakhna aur sirf utna hi load karna jitna us waqt chahiye.
+Misal: ek library hai (Skills), aur ek usool hai ke aap ek waqt mein sirf wohi kitab mez par laayein jo aaj chahiye (progressive disclosure), poori library nahi.
+Ek line mein: Skills = folder, progressive disclosure = us folder ko thora thora load karne ka tareeqa.
+
+**Idea 6: Andaaz**
+- **RLHF (reinforcement learning from human feedback):** training ka teesra marhala, jis mein insani ratings model ke andaaz ko dhalti hain.
+- **Sycophancy:** woh seekhi hui aadat ke model wohi bole jo aap sunna chahti hain.
+
+**Teen jodiyan jo exam mein ulajhane ke liye aati hain:**
+- **Training aur inference:** training ek baar ki tayyari hai (weights badalte hain), inference har baar ka istemal hai (kuch nahi badalta).
+- **Context window aur chat history:** window woh jagah hai, chat history us mein bheja jane wala ek hissa.
+- **Hallucination aur sycophancy:** hallucination jhoota jawab hai, sycophancy woh jawab hai jo aap ke ishare ke mutabiq ho.
+
+Ek ehtiyat: Idea 7 se 9 ke words (jagged, tools ki tafseel, agent, connector, MCP, reasoning) abhi baqi hain, woh un ideas ke saath aayenge.
+
+"Vocab quiz" likhein to in words par English mein 8-10 sawal bana deta hoon, ya "aage" likhein to Idea 7 shuru karta hoon.
+////////////////////////////////////////////////////////////
 
 
 
