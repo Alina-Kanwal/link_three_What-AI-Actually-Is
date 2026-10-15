@@ -354,6 +354,12 @@ Minutes lagte hain, dozens of live pages.
 Structured reports ke liye achha hai.
 Kamzori: slow hai, aur simple sawal ke liye zaroorat se zyada hai.
 Document ka example: “neighborhood mein Halloween haunted house plan karo, permits, fire safety aur noise ordinances ke saath.” AI research plan banata hai, kai searches ek saath chalata hai, decide karta hai ke aage kya khodna hai, aur checklists ke saath multi-section report banata hai. yhi kaam junior man 1 hour jb k AI in mints.
+***Web search asal mein kaise kaam karta hai (aur kabhi pages ghalat kyun parhta hai):
+1. Web search mein ek alag, chhota model pages ko search karke unhein **chhote passages mein kaat deta hai**.
+2. Aap se baat karne wale model tak sirf wohi **kata hua summary** pohanchta hai, poora page nahi.
+3. Summary banate waqt kuch details kho jati hain.
+4. Isi liye model kabhi page ki baat **ghalat report** kar deta hai, aur fix ye hai ke "exact sentence quote karo" likhein.
+
 
    
 
