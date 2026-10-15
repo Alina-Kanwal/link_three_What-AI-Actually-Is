@@ -321,7 +321,9 @@ Absorbed errors se hoshiyar rahein. AI ne un hi sources se galat beliefs aur pur
      IMP BAT
 Voyager 1 = Strong zone ka example (is par internet par bohat likha gaya hai, isliye AI sahi batata hai).
 Quasars = Sparse zone ka example (kam likha gaya, isliye AI ghalat ho sakta hai).
-Loud, Quiet, Secret = Strong, Sparse, Absent ke doosre naam.
+Loud = sab baat karte hain, AI achha jaanta hai (Strong).
+Quiet = kam log baat karte hain, AI ghalat ho sakta hai (Sparse).
+Secret = kisi ne likha hi nahi, AI jaan hi nahi sakta (Absent).
    
 
 
