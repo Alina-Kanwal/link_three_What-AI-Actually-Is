@@ -318,6 +318,11 @@ Absorbed errors se hoshiyar rahein. AI ne un hi sources se galat beliefs aur pur
 5. **"Hamari company ne last quarter kya decide kiya?"**
    - Training data: hai hi nahi.
    - Trust: **Kuch trust nahi**. AI guess kar raha hai.
+     IMP BAT
+Voyager 1 = Strong zone ka example (is par internet par bohat likha gaya hai, isliye AI sahi batata hai).
+Quasars = Sparse zone ka example (kam likha gaya, isliye AI ghalat ho sakta hai).
+Loud, Quiet, Secret = Strong, Sparse, Absent ke doosre naam.
+   
 
 
 
