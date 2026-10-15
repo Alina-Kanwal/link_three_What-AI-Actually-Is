@@ -324,6 +324,37 @@ Quasars = Sparse zone ka example (kam likha gaya, isliye AI ghalat ho sakta hai)
 Loud = sab baat karte hain, AI achha jaanta hai (Strong).
 Quiet = kam log baat karte hain, AI ghalat ho sakta hai (Sparse).
 Secret = kisi ne likha hi nahi, AI jaan hi nahi sakta (Absent).
+Document ki key line: “Sounding sure is NOT the same as being right”, yani AI ka yaqeen se bolna sahi hone ki nishani nahi.
+Extra note: Document kehta hai ke galat logic pakarna ek alag skill hai, jo “Thinking in AI Era” course sikhata hai. Pehli jagah dekhne ki ye hai ke jis topic par internet ne kam likha, us par confident jawab aaye.
+/////////////////////////////////////////////////////////
+Alina, knowledge cutoff ko is tarah samjhein:
+Model ki training ek din band ho jati hai, jaise kitab ka chhapna band ho jata hai.
+Us din tak jo text internet par tha, model ne wohi parha. Us din ke baad jo likha gaya, wo model ne kabhi dekha hi nahi.
+Example: Maan lein cutoff 1 January hai. Agar 1 March ko koi nayi regulation aayi, to model ko uska pata nahi hoga. Wo ya to bataega hi nahi, ya purani information confident andaaz mein de dega.
+Isi liye nayi cheezon (news, prices, recent rules) ke liye web search chahiye, jo live pages la kar model ke samne rakhta hai.
+AI aksar aap ko bataye bina khud chunta hai ke jawab kaise dena hai. Teen tareeqe hain:
+Pretrained: sirf training ke knowledge se.
+Web search: live pages fetch karke.
+Deep research: kai minute, dozens of sources, structured report.
+Ye jaanna zaroori hai ke kaunsa mode chala, kyunke har mode alag tareeqe se fail hota hai.
+************Mode 1, Pretrained:
+Sab se tez hai (seconds).
+Sirf training data se jawab deta hai.
+Definitions aur common facts ke liye achha hai.
+Out-of-date ya local information par kamzor hai.
+Document ke examples jo pretrained se theek hain: “cats walls ko kyun ghoorti hain”, “Voyager 1 record par kya hai”, “Hamlet ka plot”. Ye har hafte nahi badalte.
+**************Mode 2, Web search:
+Tens of seconds, kuch live pages.
+Current events aur quick research ke liye achha hai.
+Kamzori: pehle popular sources cite karta hai.
+Fayda: knowledge cutoff ke baad ki cheezein (meme, regulation, product launch) model ko nazar nahi aatin. Web search recent article la kar sahi jawab de sakta hai.
+Document ka galat example: ek dost ne “Henderson, Nevada mein run karne ki jagah” poochi. AI ne 20 saal purana web page cite kiya aur ek aisa school recommend kiya jo ab public ke liye khula nahi. Web search ye check nahi karta ke source current hai ya nahi.
+****************Mode 3, Deep research:
+Minutes lagte hain, dozens of live pages.
+Structured reports ke liye achha hai.
+Kamzori: slow hai, aur simple sawal ke liye zaroorat se zyada hai.
+Document ka example: “neighborhood mein Halloween haunted house plan karo, permits, fire safety aur noise ordinances ke saath.” AI research plan banata hai, kai searches ek saath chalata hai, decide karta hai ke aage kya khodna hai, aur checklists ke saath multi-section report banata hai. yhi kaam junior man 1 hour jb k AI in mints.
+
    
 
 
