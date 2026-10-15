@@ -287,10 +287,37 @@ Chain of working: woh intermediate steps jo context window mein jama hote hain
 Thinking mode: reasoning on karne ka option, mushkil kaam ke liye
 Tumhare scenario-based exam ke liye iska seedha matlab yeh hai: agar scenario mein kaha jaye “model ne bohat soch kar answer diya, to ab verify ki zaroorat nahi”, to yeh ghalat hai.
 Exam line: thinking is more prediction written before the answer; it helps a lot, but it does not give the machine a truth-checker.
-
 Ab course ke 9 ideas poore ho gaye. Document ka aakhri ek jumla jo exam ke liye yaad rakhna:
-
 It is a prediction machine that learned by reading and has no part that checks the truth. So it is fluent everywhere, reliable only where it read a lot, and you are the part that checks.
+//////////////////////////////////////////////////////////////////concept 2
+Pretrained knowledge
+wo jawab jo AI apni training ke text se deta hai, us waqt koi lookup kiye bina.
+Knowledge cutoff = wo date jahan AI ke training text ka end ho jata hai. Us ke baad ki cheez AI ke andar nahi hoti.
+Points
+AI ne parh kar seekha, jee kar nahi. AI ke paas body ya senses nahi hain. Usne duniya ke baare mein text parha: Reddit aur Quora threads, Wikipedia, books, news articles, research papers, blogs aur forums.
+Rule: Jis topic par internet par jitna zyada likha gaya, AI ka jawab utna hi reliable hota hai. Document ne topics ko 3 groups mein baanta hai:
+Strong: cooking, celebrity gossip, common medical advice, top-1000 movies, popular programming languages, Voyager 1 record, cats deewar ko kyun ghoorti hain.
+Sparse (kam): quasars, Cantonese (internet text ka 0.1% se kam), regional history, niche professional knowledge.
+Absent (bilkul nahi): aap ki company ka secret data, aap ka private calendar, knowledge cutoff ke baad ki cheezein, aur jo kabhi public internet par nahi daali gayi.
+Typos theek karne mein waqt zaya mat karein. AI internet text par train hua hai, aur wahan typos bohat hain. Isliye “definately” jaisi galat spelling se jawab nahi badalta.
+Absorbed errors se hoshiyar rahein. AI ne un hi sources se galat beliefs aur purani information bhi seekh li. Forum ki confident galat post, confident galat model ban jati hai. Important baat ko primary source se check karein.
+//////////////////////////Ecxample table documnt ka can read fast
+**Trust table (point-wise):**
+1. **"Roux kaise banate hain?"**
+   - Training data: cooking sab se zyada discuss hone wale topics mein hai.
+   - Trust: **High**.
+2. **Top-1000 movie ka plot**
+   - Training data: hazaron baar review hua hai.
+   - Trust: **High**.
+3. **Chhote gaon ki history**
+   - Training data: shayad sirf ek Wikipedia paragraph, ya kuch bhi nahi.
+   - Trust: **Low**. Primary source se verify karein.
+4. **"Meri industry mein recent regulatory change"**
+   - Training data: aksar knowledge cutoff ke baad ki baat hoti hai.
+   - Trust: **Kuch trust nahi**, jab tak AI lookup na kare.
+5. **"Hamari company ne last quarter kya decide kiya?"**
+   - Training data: hai hi nahi.
+   - Trust: **Kuch trust nahi**. AI guess kar raha hai.
 
 
 
