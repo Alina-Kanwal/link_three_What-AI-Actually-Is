@@ -289,76 +289,7 @@ Tumhare scenario-based exam ke liye iska seedha matlab yeh hai: agar scenario me
 Exam line: thinking is more prediction written before the answer; it helps a lot, but it does not give the machine a truth-checker.
 Ab course ke 9 ideas poore ho gaye. Document ka aakhri ek jumla jo exam ke liye yaad rakhna:
 It is a prediction machine that learned by reading and has no part that checks the truth. So it is fluent everywhere, reliable only where it read a lot, and you are the part that checks.
-//////////////////////////////////////////////////////////////////concept 2
-Pretrained knowledge
-wo jawab jo AI apni training ke text se deta hai, us waqt koi lookup kiye bina.
-Knowledge cutoff = wo date jahan AI ke training text ka end ho jata hai. Us ke baad ki cheez AI ke andar nahi hoti.
-Points
-AI ne parh kar seekha, jee kar nahi. AI ke paas body ya senses nahi hain. Usne duniya ke baare mein text parha: Reddit aur Quora threads, Wikipedia, books, news articles, research papers, blogs aur forums.
-Rule: Jis topic par internet par jitna zyada likha gaya, AI ka jawab utna hi reliable hota hai. Document ne topics ko 3 groups mein baanta hai:
-Strong: cooking, celebrity gossip, common medical advice, top-1000 movies, popular programming languages, Voyager 1 record, cats deewar ko kyun ghoorti hain.
-Sparse (kam): quasars, Cantonese (internet text ka 0.1% se kam), regional history, niche professional knowledge.
-Absent (bilkul nahi): aap ki company ka secret data, aap ka private calendar, knowledge cutoff ke baad ki cheezein, aur jo kabhi public internet par nahi daali gayi.
-Typos theek karne mein waqt zaya mat karein. AI internet text par train hua hai, aur wahan typos bohat hain. Isliye “definately” jaisi galat spelling se jawab nahi badalta.
-Absorbed errors se hoshiyar rahein. AI ne un hi sources se galat beliefs aur purani information bhi seekh li. Forum ki confident galat post, confident galat model ban jati hai. Important baat ko primary source se check karein.
-//////////////////////////Ecxample table documnt ka can read fast
-**Trust table (point-wise):**
-1. **"Roux kaise banate hain?"**
-   - Training data: cooking sab se zyada discuss hone wale topics mein hai.
-   - Trust: **High**.
-2. **Top-1000 movie ka plot**
-   - Training data: hazaron baar review hua hai.
-   - Trust: **High**.
-3. **Chhote gaon ki history**
-   - Training data: shayad sirf ek Wikipedia paragraph, ya kuch bhi nahi.
-   - Trust: **Low**. Primary source se verify karein.
-4. **"Meri industry mein recent regulatory change"**
-   - Training data: aksar knowledge cutoff ke baad ki baat hoti hai.
-   - Trust: **Kuch trust nahi**, jab tak AI lookup na kare.
-5. **"Hamari company ne last quarter kya decide kiya?"**
-   - Training data: hai hi nahi.
-   - Trust: **Kuch trust nahi**. AI guess kar raha hai.
-     IMP BAT
-Voyager 1 = Strong zone ka example (is par internet par bohat likha gaya hai, isliye AI sahi batata hai).
-Quasars = Sparse zone ka example (kam likha gaya, isliye AI ghalat ho sakta hai).
-Loud = sab baat karte hain, AI achha jaanta hai (Strong).
-Quiet = kam log baat karte hain, AI ghalat ho sakta hai (Sparse).
-Secret = kisi ne likha hi nahi, AI jaan hi nahi sakta (Absent).
-Document ki key line: “Sounding sure is NOT the same as being right”, yani AI ka yaqeen se bolna sahi hone ki nishani nahi.
-Extra note: Document kehta hai ke galat logic pakarna ek alag skill hai, jo “Thinking in AI Era” course sikhata hai. Pehli jagah dekhne ki ye hai ke jis topic par internet ne kam likha, us par confident jawab aaye.
-/////////////////////////////////////////////////////////
-Alina, knowledge cutoff ko is tarah samjhein:
-Model ki training ek din band ho jati hai, jaise kitab ka chhapna band ho jata hai.
-Us din tak jo text internet par tha, model ne wohi parha. Us din ke baad jo likha gaya, wo model ne kabhi dekha hi nahi.
-Example: Maan lein cutoff 1 January hai. Agar 1 March ko koi nayi regulation aayi, to model ko uska pata nahi hoga. Wo ya to bataega hi nahi, ya purani information confident andaaz mein de dega.
-Isi liye nayi cheezon (news, prices, recent rules) ke liye web search chahiye, jo live pages la kar model ke samne rakhta hai.
-AI aksar aap ko bataye bina khud chunta hai ke jawab kaise dena hai. Teen tareeqe hain:
-Pretrained: sirf training ke knowledge se.
-Web search: live pages fetch karke.
-Deep research: kai minute, dozens of sources, structured report.
-Ye jaanna zaroori hai ke kaunsa mode chala, kyunke har mode alag tareeqe se fail hota hai.
-************Mode 1, Pretrained:
-Sab se tez hai (seconds).
-Sirf training data se jawab deta hai.
-Definitions aur common facts ke liye achha hai.
-Out-of-date ya local information par kamzor hai.
-Document ke examples jo pretrained se theek hain: “cats walls ko kyun ghoorti hain”, “Voyager 1 record par kya hai”, “Hamlet ka plot”. Ye har hafte nahi badalte.
-**************Mode 2, Web search:
-Tens of seconds, kuch live pages.
-Current events aur quick research ke liye achha hai.
-Kamzori: pehle popular sources cite karta hai.
-Fayda: knowledge cutoff ke baad ki cheezein (meme, regulation, product launch) model ko nazar nahi aatin. Web search recent article la kar sahi jawab de sakta hai.
-Document ka galat example: ek dost ne “Henderson, Nevada mein run karne ki jagah” poochi. AI ne 20 saal purana web page cite kiya aur ek aisa school recommend kiya jo ab public ke liye khula nahi. Web search ye check nahi karta ke source current hai ya nahi.
-****************Mode 3, Deep research:
-Minutes lagte hain, dozens of live pages.
-Structured reports ke liye achha hai.
-Kamzori: slow hai, aur simple sawal ke liye zaroorat se zyada hai.
-Document ka example: “neighborhood mein Halloween haunted house plan karo, permits, fire safety aur noise ordinances ke saath.” AI research plan banata hai, kai searches ek saath chalata hai, decide karta hai ke aage kya khodna hai, aur checklists ke saath multi-section report banata hai. yhi kaam junior man 1 hour jb k AI in mints.
-***Web search asal mein kaise kaam karta hai (aur kabhi pages ghalat kyun parhta hai):
-1. Web search mein ek alag, chhota model pages ko search karke unhein **chhote passages mein kaat deta hai**.
-2. Aap se baat karne wale model tak sirf wohi **kata hua summary** pohanchta hai, poora page nahi.
-3. Summary banate waqt kuch details kho jati hain.
-4. Isi liye model kabhi page ki baat **ghalat report** kar deta hai, aur fix ye hai ke "exact sentence quote karo" likhein.
+
 
 
    
